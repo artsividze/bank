@@ -295,3 +295,10 @@ h2 {
 .timer {
   font-weight: 600;
 }
+.data {
+  display: flex;
+  flex-direction: row;
+  h1 {
+    width: 200px;
+  }
+}
