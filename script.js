@@ -109,9 +109,14 @@ const calcDisplaySummary = function (acc) {
   labelSumInterest.textContent = `${interest.toFixed(2)}€`;
 };
 const updateUI = function (acc) {
+  // Display movements
   displayMovements(acc.movements);
-  calcDisplayBalance(currentAccount);
-  calcDisplaySummary(currentAccount);
+
+  // Display balance
+  calcDisplayBalance(acc);
+
+  // Display summary
+  calcDisplaySummary(acc);
 };
 let currentAccount;
 btnLogin.addEventListener('click', function (e) {
